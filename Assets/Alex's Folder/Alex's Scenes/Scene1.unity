@@ -627,8 +627,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1425275535
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d15fdb6473693ba4a90bcb7a084e40a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1065,6 +1065,7 @@ GameObject:
   - component: {fileID: 1837789680}
   - component: {fileID: 1837789679}
   - component: {fileID: 1837789678}
+  - component: {fileID: 1837789681}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1136,3 +1137,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1837789681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837789677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c25778d78a4f4f2458666216167fd302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 764410875}
+  xMin: -1
+  xMax: 1
+  yMin: -1
+  yMax: 1
