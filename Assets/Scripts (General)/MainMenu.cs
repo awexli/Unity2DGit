@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//should be put in prefab folder when made into a scenemanager object
 public class MainMenu : MonoBehaviour
 {
     public void playGame(){ 
@@ -17,4 +18,9 @@ public class MainMenu : MonoBehaviour
     public void quitCurrentGame(){
     	SceneManager.LoadScene(0);
     }
+
+    public void restartStage(){
+    	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
