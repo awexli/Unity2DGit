@@ -121,10 +121,12 @@ public class PlayerController : MonoBehaviour
         // become mini for 30 seconds
         transform.localScale /= 2;
         speed = speed * 2;
+        jumpforce *= 2;
         yield return new WaitForSeconds(30);
         // revert back to normal
         transform.localScale *= 2;
         speed = speed / 2;
+        jumpforce /= 2;
     }
 
     IEnumerator largeTime()
