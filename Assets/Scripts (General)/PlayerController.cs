@@ -123,7 +123,8 @@ public class PlayerController : MonoBehaviour
         speed = speed * 2;
         jumpforce *= 2;
         yield return new WaitForSeconds(30);
-        // revert back to normal
+        // revert back to normal and avoids clipping through floor
+        transform.position = new Vector2(transform.position.x, transform.position.y + 1); 
         transform.localScale *= 2;
         speed = speed / 2;
         jumpforce /= 2;
@@ -135,7 +136,8 @@ public class PlayerController : MonoBehaviour
         transform.localScale *= 2;
         speed = speed / 2;
         yield return new WaitForSeconds(30);
-        // revert back to normal
+        // revert back to normal and avoids clipping through floor
+        transform.position = new Vector2(transform.position.x, transform.position.y + 1);
         transform.localScale /= 2;
         speed = speed * 2;
     }
