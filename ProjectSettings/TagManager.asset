@@ -19,7 +19,7 @@ TagManager:
   - Player
   - Ground
   - Wall
-  - 
+  - Hud
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1058025647
+    locked: 0
+  - name: Hud
+    uniqueID: 822180649
     locked: 0
