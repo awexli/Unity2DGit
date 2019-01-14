@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     private Rigidbody2D rb2d;
     bool faceRight = true;
-    bool jump = false;
 
     Animator anim;
     public AudioSource jumpSound;
