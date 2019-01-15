@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed = 10f;
     private Rigidbody2D rb2d;
     bool faceRight = true;
-    bool jump = false;
 
     Animator anim;
     public AudioSource jumpSound;
@@ -51,6 +51,10 @@ public class PlayerController : MonoBehaviour
         {
             rb2d.velocity = Vector2.up * jumpforce;
             jumpSound.Play();
+        }
+
+        if(Input.GetKeyDown(KeyCode.R)){
+         	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //or whatever number your scene is
         }
 
     }

@@ -13,36 +13,23 @@ public class WallCheck : MonoBehaviour
 	
 	public float jumpforce = 5f;
 	
-	private int extraJumps;
-	public int extraJumpsValue;
-	
 	public AudioSource jumpSound;
 	
     // Start is called before the first frame update
     void Start()
     {
-        extraJumps = extraJumpsValue;
 		rb2d = GetComponent<Rigidbody2D>();
+		
     }
-
+	
     // Update is called once per frame
     void Update()
     {
-        if (onWall == true)
-		{
-			extraJumps = extraJumpsValue;
-		}
 		
-		if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
+		if (Input.GetKeyDown(KeyCode.UpArrow) && onWall == true)
         {
+			jumpSound.Play();
             rb2d.velocity = Vector2.up * jumpforce;
-            jumpSound.Play();
-            extraJumps--;
-        }
-        else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && onWall == true)
-        {
-            rb2d.velocity = Vector2.up * jumpforce;
-            jumpSound.Play();
         }
     }
 	
@@ -50,4 +37,5 @@ public class WallCheck : MonoBehaviour
 	{
 		onWall = Physics2D.OverlapCircle(wallCheck.position, wallRadius, whatIsWall);
 	}
+	
 }
