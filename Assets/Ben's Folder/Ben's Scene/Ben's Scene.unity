@@ -1162,10 +1162,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1565467480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b58731139a982724f9496024505ce878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
+  health: 0
+  damage: 0
+  camAnim: {fileID: 0}
+  healthBar: {fileID: 0}
+  isDead: 0
 --- !u!1 &1864707813
 GameObject:
   m_ObjectHideFlags: 0
