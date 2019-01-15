@@ -8,14 +8,14 @@ public class Player : MonoBehaviour {
     public int health;
     public float speed;
 
-    private Animator anim;
+   // private Animator anim;
     private Rigidbody2D rb;
     private Vector2 moveVelocity;
 
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
+       // anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -28,10 +28,10 @@ public class Player : MonoBehaviour {
 
         if (moveInput != Vector2.zero)
         {
-            anim.SetBool("isRunning", true);
+          //  anim.SetBool("isRunning", true);
         }
         else {
-            anim.SetBool("isRunning", false);
+          //  anim.SetBool("isRunning", false);
         }
     }
 
