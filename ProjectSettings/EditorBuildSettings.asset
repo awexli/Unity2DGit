@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Juan's Folder/MainMenu.unity
     guid: 17d759dfdad637042afa91f1efe648c7
   - enabled: 1
-    path: Assets/Sunny's Folder/Sunny's Scene.unity
+    path: Assets/Sunny's Folder/Sunny's Scenes/Sunny's Scene.unity
     guid: e3e14b3b332b5cc4aa87d64733566bfa
   - enabled: 1
     path: Assets/Juan's Folder/LevelBlank.unity
