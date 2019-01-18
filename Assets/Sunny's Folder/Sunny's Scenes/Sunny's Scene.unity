@@ -3472,6 +3472,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.13814265
       objectReference: {fileID: 0}
+    - target: {fileID: 527305388751193697, guid: 6b35f040b5b376142a73d61eb2931298,
+        type: 3}
+      propertyPath: lowJumpMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 527305388751193706, guid: 6b35f040b5b376142a73d61eb2931298, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6b35f040b5b376142a73d61eb2931298, type: 3}
