@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
 public class Projectile : MonoBehaviour {
 
     public int damage;
@@ -27,4 +28,4 @@ public class Projectile : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-}
+}*/
