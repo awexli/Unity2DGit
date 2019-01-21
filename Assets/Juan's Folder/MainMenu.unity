@@ -861,7 +861,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Sunny: Big Dick N****S'
+  m_Text: Basic Platformer
 --- !u!222 &1982070674
 CanvasRenderer:
   m_ObjectHideFlags: 0

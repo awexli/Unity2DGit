@@ -11,5 +11,4 @@ public class DamageScript : MonoBehaviour
         if (col.transform.CompareTag("Player"))
             col.transform.position = spawnPoint.position;
     }
-
 }

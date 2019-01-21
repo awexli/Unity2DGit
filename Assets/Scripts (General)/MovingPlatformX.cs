@@ -10,7 +10,7 @@ public class MovingPlatformX : MonoBehaviour
     public float current_position; // enter current x position of platform
    
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
        
         if (transform.position.x > (current_position + 5))
