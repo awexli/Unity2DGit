@@ -10,8 +10,13 @@ public class NextLevel : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-           // SceneManager.LoadScene("Scene 2"); //loads scene based off string "nameofScene"
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads scene based off of index scene
+            nextLevelSound.Play();
+            if (!nextLevelSound.isPlaying)
+            {
+                // SceneManager.LoadScene("Scene 2"); //loads scene based off string "nameofScene"
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads scene based off of index scene
+
+            }
         }
 
     }
