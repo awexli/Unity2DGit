@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    public AudioSource nextLevelSound;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
