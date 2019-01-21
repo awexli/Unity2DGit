@@ -8,6 +8,8 @@ TagManager:
   - Large
   - Mini
   - Wall
+  - Boss
+  - Moving Platform
   layers:
   - Default
   - TransparentFX
