@@ -4,27 +4,27 @@ using UnityEngine;
 
 public class DontDestroy : MonoBehaviour
 {
-    GameObject[] objs;
-   
+
+    public string DontDestroyTag;
 
     void Awake()
     {
 
 
-        objs = GameObject.FindGameObjectsWithTag("Restart&NextLvl");
+        GameObject[] objs = GameObject.FindGameObjectsWithTag(DontDestroyTag);
         
 
-        if (objs.Length > 2)
+        if (objs.Length > 1)
         {
             
-            Destroy(this.gameObject);
-            Debug.Log("Sounds from previous scene destroyed");
-          
-            
-            
+                Destroy(this.gameObject);
+                Debug.Log("Sounds from previous scene destroyed");
         }
-
-        DontDestroyOnLoad(this.gameObject);
+        else
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+      
     }
 
     private void Start()
