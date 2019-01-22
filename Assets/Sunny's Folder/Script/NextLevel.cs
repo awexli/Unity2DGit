@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    public AudioSource nextLevelSound;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-           // SceneManager.LoadScene("Scene 2"); //loads scene based off string "nameofScene"
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads scene based off of index scene
+           
+                nextLevelSound.Play();
+                 SceneManager.LoadScene("Scene 2"); //loads scene based off string "nameofScene"
+               // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads scene based off of index scene
+            }
         }
 
     }
-}
+
