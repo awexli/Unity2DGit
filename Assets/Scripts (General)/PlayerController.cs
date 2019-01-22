@@ -1,21 +1,19 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    // Changed to GameObject because only the game object of the menu needs to be accessed, you can
-    // change this to any class that inherits MonoBehaviour
-    public GameObject optionsMenu;
-
     public float speed = 10f;
     private Rigidbody2D rb2d;
     bool faceRight = true;
-
+    // test
+    GameObject[] objs;
     Animator anim;
     public AudioSource jumpSound;
     public AudioSource restartSound;
+    
 
     bool grounded = false;
     public Transform groundCheck;
@@ -39,13 +37,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-
         if (grounded == true)
         {
             extraJumps = extraJumpsValue;
         }
 
         
+
         if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
         {
             rb2d.velocity = Vector2.up * jumpforce;
@@ -59,8 +57,17 @@ public class PlayerController : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.R)){
-            restartSound.Play();
-         	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //or whatever number your scene is
+            
+            if (restartSound == null)
+            {
+                StartCoroutine(LoadSound());
+               
+            }
+            else
+            {
+                restartSound.Play();
+            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //or whatever number your scene is
         }
 
     }
@@ -126,6 +133,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    IEnumerator LoadSound()
+    {
+        Debug.Log("Inside load sound, sound should play");
+        GameObject s = Instantiate(Resources.Load("Bruh") as GameObject);
+        restartSound = s.gameObject.GetComponent<AudioSource>();
+        
+        yield return new WaitForSeconds(2);
+        
+       
+        restartSound.Play();
+      
+    }
+   
     IEnumerator miniTime()
     {
         // become mini for 30 seconds
