@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     private Rigidbody2D rb2d;
     bool faceRight = true;
-
+    // test
+    GameObject[] objs;
     Animator anim;
     public AudioSource jumpSound;
     public AudioSource restartSound;
@@ -56,7 +57,17 @@ public class PlayerController : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.R)){
-         	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //or whatever number your scene is
+            
+            if (restartSound == null)
+            {
+                StartCoroutine(LoadSound());
+               
+            }
+            else
+            {
+                restartSound.Play();
+            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //or whatever number your scene is
         }
 
     }
@@ -122,6 +133,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    IEnumerator LoadSound()
+    {
+        Debug.Log("Inside load sound, sound should play");
+        GameObject s = Instantiate(Resources.Load("Bruh") as GameObject);
+        restartSound. = s.gameObject.GetComponent<AudioSource>();
+        
+        yield return new WaitForSeconds(2);
+        
+       
+        restartSound.Play();
+      
+    }
+   
     IEnumerator miniTime()
     {
         // become mini for 30 seconds
