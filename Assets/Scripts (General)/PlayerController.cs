@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Inside load sound, sound should play");
         GameObject s = Instantiate(Resources.Load("Bruh") as GameObject);
-        restartSound. = s.gameObject.GetComponent<AudioSource>();
+        restartSound = s.gameObject.GetComponent<AudioSource>();
         
         yield return new WaitForSeconds(2);
         
