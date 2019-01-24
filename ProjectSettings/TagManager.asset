@@ -10,7 +10,8 @@ TagManager:
   - Wall
   - Boss
   - Moving Platform
-  - Restart&NextLvl
+  - Restart
+  - NextLvl
   layers:
   - Default
   - TransparentFX
