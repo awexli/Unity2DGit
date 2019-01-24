@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                restartSound.Play();
+                //restartSound.Play();
             }
             
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //or whatever number your scene is

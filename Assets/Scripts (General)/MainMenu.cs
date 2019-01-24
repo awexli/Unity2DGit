@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 //should be put in prefab folder when made into a scenemanager object
 public class MainMenu : MonoBehaviour
 {
+    public AudioSource Nani;
     public void playGame(){ 
     	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1); //loads scene based off of index scene
     	//SceneManager.LoadScene("SceneTwo"); //loads scene based off string "nameofScene"
     }
 
     public void quit(){ 
+        Nani.Play();
+
     	Application.Quit();
     }
 
