@@ -315,6 +315,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &293929361 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4029997249017043777, guid: 255c3cdf3f819dd4bbdd226d04b653d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 781862369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &297073016
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,8 +457,7 @@ PrefabInstance:
         type: 3}
       propertyPath: nextLevelSound
       value: 
-      objectReference: {fileID: 4029997249017043777, guid: 255c3cdf3f819dd4bbdd226d04b653d3,
-        type: 3}
+      objectReference: {fileID: 293929361}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbda7809c96f194e9f2cee019c4fc07, type: 3}
 --- !u!1 &333219856
