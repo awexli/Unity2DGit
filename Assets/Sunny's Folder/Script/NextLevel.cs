@@ -24,8 +24,8 @@ public class NextLevel : MonoBehaviour
                 nextLevelSound.Play();
             }
                 
-                 SceneManager.LoadScene("Scene 2"); //loads scene based off string "nameofScene"
-               // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads scene based off of index scene
+                // SceneManager.LoadScene("Scene 2"); //loads scene based off string "nameofScene"
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads scene based off of index scene
             }
         }
 
