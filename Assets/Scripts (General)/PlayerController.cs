@@ -60,13 +60,17 @@ public class PlayerController : MonoBehaviour
             
             if (restartSound == null)
             {
-                StartCoroutine(LoadSound());
-               
+                Debug.Log("Inside load sound, sound should play");
+                GameObject s = GameObject.FindGameObjectWithTag("Restart");
+                restartSound = s.GetComponent<AudioSource>();
+                restartSound.Play();
+
             }
             else
             {
-                restartSound.Play();
+                //restartSound.Play();
             }
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //or whatever number your scene is
         }
 
@@ -133,18 +137,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    IEnumerator LoadSound()
-    {
-        Debug.Log("Inside load sound, sound should play");
-        GameObject s = Instantiate(Resources.Load("Bruh") as GameObject);
-        restartSound = s.gameObject.GetComponent<AudioSource>();
-        
-        yield return new WaitForSeconds(2);
-        
-       
-        restartSound.Play();
-      
-    }
+    
    
     IEnumerator miniTime()
     {
