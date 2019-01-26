@@ -8,8 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 10f;
     private Rigidbody2D rb2d;
     bool faceRight = true;
-    // test
-    GameObject[] objs;
+
     Animator anim;
     public AudioSource jumpSound;
     public AudioSource restartSound;
@@ -60,7 +59,6 @@ public class PlayerController : MonoBehaviour
             
             if (restartSound == null)
             {
-                Debug.Log("Inside load sound, sound should play");
                 GameObject s = GameObject.FindGameObjectWithTag("Restart");
                 restartSound = s.GetComponent<AudioSource>();
                 restartSound.Play();
@@ -68,7 +66,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                //restartSound.Play();
+                restartSound.Play();
             }
             
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //or whatever number your scene is
