@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Juan's Folder/MainMenu.unity
+    guid: 17d759dfdad637042afa91f1efe648c7
+  - enabled: 1
+    path: Assets/Sunny's Folder/Sunny's Scenes/Sunny's Scene.unity
+    guid: e3e14b3b332b5cc4aa87d64733566bfa
+  - enabled: 1
+    path: Assets/Juan's Folder/LevelBlank.unity
+    guid: b1a03955bcb1c70419fbc5de08c3226a
+  - enabled: 1
+    path: Assets/Alex's Folder/Alex's Scenes/Scene1.unity
+    guid: e843168d13ad173499ea4579a0b85fb7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Sunny's Folder/Sunny's Scenes/Scene 2.unity
+    guid: 53b0d1569405482489d5792a98c248d9
+  - enabled: 1
+    path: Assets/Alex's Folder/Alex's Scenes/Scene2.unity
+    guid: 1055d9697b0ecb74f9ba4a82315b29a1
   m_configObjects: {}

@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ExtraLife
+  - Large
+  - Mini
+  - Wall
+  - Boss
+  - Moving Platform
+  - Restart
+  - NextLvl
   layers:
   - Default
   - TransparentFX
@@ -13,10 +21,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Ground
+  - Wall
+  - Hud
   - 
   - 
   - 
@@ -38,6 +46,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3251848329
+    locked: 0
+  - name: Foreground
+    uniqueID: 1851132453
+    locked: 0
+  - name: Player
+    uniqueID: 1425275535
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 163170813
+    locked: 0
+  - name: Player
+    uniqueID: 1058025647
+    locked: 0
+  - name: Hud
+    uniqueID: 822180649
     locked: 0
